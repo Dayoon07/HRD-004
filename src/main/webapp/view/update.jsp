@@ -62,6 +62,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
+						<button type="button" style="padding: 10px 20px; cursor: pointer;" onclick="location.href='/view/list.jsp'">돌아가기</button>
 						<button type="submit" style="padding: 10px 20px; cursor: pointer;">수정</button>
 					</td>
 				</tr>

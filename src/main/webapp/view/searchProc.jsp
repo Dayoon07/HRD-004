@@ -16,14 +16,14 @@
 	request.setAttribute("c", c);
 	request.setAttribute("f", f);
 	
-	System.out.println(request.getMethod());
+	System.out.println("요청을 하는 방식은 : " + request.getMethod());
 	
 	if (!list.isEmpty()) {
-		request.setAttribute("search", "yes");
-		System.out.println(request.getAttribute("search"));
+		request.setAttribute("s", "yes");
+		System.out.println("쿼리 결과 " + request.getAttribute("s"));
 	} else {
-		request.setAttribute("search", "no");
-		System.out.println(request.getAttribute("search"));
+		request.setAttribute("s", "no");
+		System.out.println("쿼리 결과 " + request.getAttribute("s"));
 	}
 
 	RequestDispatcher rd = request.getRequestDispatcher("/view/search.jsp");

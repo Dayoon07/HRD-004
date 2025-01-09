@@ -42,7 +42,7 @@
 						for (MemberVo vo : list) {
 			%>
 				<tr>
-					<td><%= vo.getUserid() %></td>
+					<td><a href="/view/update.jsp?userid=<%= vo.getUserid() %>"><%= vo.getUserid() %></a></td>
 					<td><%= vo.getUsername() %></td>
 					<td><%= vo.getJumin() %></td>
 					<td><%= vo.getGender() %></td>
